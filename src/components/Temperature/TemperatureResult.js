@@ -1,5 +1,4 @@
-const TemperatureResult = ({userInput, result, convertTo}) => {
-    // console.log(userInput);
+const TemperatureResult = ({result, convertTo}) => {
     
     return (
         <h3>{result} {convertTo}</h3>

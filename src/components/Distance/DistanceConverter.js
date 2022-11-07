@@ -1,7 +1,6 @@
 import { useState } from "react";
 import DistanceResult from "./DistanceResult";
 import { BsArrowLeftRight } from 'react-icons/bs';
-import { Link } from "react-router-dom";
 import BackBtn from "../UI/BackBtn";
 
 
@@ -15,7 +14,7 @@ const DistanceConverter = () => {
 
    const handleConvert = () => {
     const mile = 1.609;
-    const km = 0.621;
+    // const km = 0.621;
 
        if(from === 'miles') {
             setResult((userInput * mile).toFixed());
@@ -61,8 +60,7 @@ const DistanceConverter = () => {
                         <label htmlFor="distanceNumber" className="userInput">Enter a number</label>
                         <input onFocus={(e) => e.target.select()} type="number"  name="distanceNumber" id="distanceNumber" value={userInput} onChange={changeHandler}/> 
                         <button type="submit">Convert</button>
-                    </form>
-                   
+                    </form>                  
                     {result && <DistanceResult result={result} convertTo={to}/>}
                 </div>
             </div>

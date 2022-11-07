@@ -24,7 +24,6 @@
     }
   }
   .options {
-    // background-color: #dff6ff;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -33,7 +32,6 @@
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-
     .roundBtn {
       display: flex;
       flex-direction: column;
@@ -52,7 +50,6 @@
       &:focus {
         color: coral;
       }
-
       .mainIcon {
         font-size: 5rem;
       }

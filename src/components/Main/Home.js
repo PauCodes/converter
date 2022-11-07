@@ -3,7 +3,6 @@ import { MdAttachMoney } from 'react-icons/md';
 import { MdPhotoSizeSelectSmall } from 'react-icons/md';
 import { FaTemperatureHigh } from 'react-icons/fa';
 import { GiPathDistance } from 'react-icons/gi';
-import Footer from "../Footer/Footer";
 
 const Home = () => {
     return (

@@ -6,7 +6,6 @@ const CurrencyContext = createContext();
 export const CurrencyProvider = ({children}) => {
 
     const url = "https://v6.exchangerate-api.com/v6/a9ae822acc76e889555a326d/latest/USD";
-    // const key = "a9ae822acc76e889555a326d";
 
     const pairCodeUrl = `https://v6.exchangerate-api.com/v6/a9ae822acc76e889555a326d/pair/`;
 

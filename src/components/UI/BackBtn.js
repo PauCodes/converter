@@ -2,7 +2,7 @@ import { useContext } from "react";
 import CurrencyContext from "../../context/CurrencyContext";
 import { Link } from "react-router-dom";
 
-const BackBtn = (props) => {
+const BackBtn = () => {
 
     const {reset } = useContext(CurrencyContext);
 
