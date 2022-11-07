@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+// import '../src/styles/global/App.scss';
+import CurrencyExchange from './components/Currency/CurrencyExchange';
+import DistanceConverter from './components/Distance/DistanceConverter';
+import Footer from './components/Footer/Footer';
+import LengthConverter from './components/Length/LengthConverter';
+import Home from './components/Main/Home';
+import TemperatureConverter from './components/Temperature/TemperatureConverter';
+import { CurrencyProvider } from './context/CurrencyContext';
 
 function App() {
   return (
+    <CurrencyProvider>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={ <Home /> }/>
+        <Route path="/currency-converter" element={ <CurrencyExchange />}/>
+        <Route path="/length-converter" element={<LengthConverter />}/>
+        <Route path="/distance-converter" element={<DistanceConverter />}/>
+        <Route path="/temperature-converter" element={<TemperatureConverter />}/>
+      </Routes> 
+      <Footer />  
     </div>
+    </CurrencyProvider>
   );
 }
 

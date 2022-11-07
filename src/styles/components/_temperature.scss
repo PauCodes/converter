@@ -1,0 +1,98 @@
+section {
+  background-color: #81c6e8;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 30px;
+  position: relative;
+  @media (max-width: 865px) {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  header {
+    order: 2;
+    margin-top: 80px;
+
+    @media (max-width: 865px) {
+      order: inherit;
+      margin-top: 0;
+    }
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+    max-width: 700px;
+    padding: 60px 40px;
+    margin-top: 80px;
+    font-weight: 500;
+    @media (max-width: 865px) {
+      margin-top: 0;
+    }
+    @media (max-width: 585px) {
+      width: 100%;
+      padding: 30px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      align-content: center;
+      gap: 50px;
+      .tempContainer {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        gap: 50px;
+        @media (max-width: 585px) {
+          flex-direction: column;
+          gap: 30px;
+        }
+        label.unitName {
+          width: 150px;
+          text-align: center;
+          @media (max-width: 585px) {
+            width: auto;
+          }
+        }
+        button.convertBtn {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          .tempIcon {
+            color: #81c6e8;
+            font-weight: 900;
+          }
+          @media (max-width: 585px) {
+            transform: rotate(90deg);
+          }
+        }
+      }
+      label.userInput {
+        font-size: 1.3rem;
+      }
+      input {
+        width: 300px;
+        padding: 20px;
+        font-size: 1.7rem;
+        background: transparent;
+        border: none;
+        border-bottom: 3px solid #1c3879;
+        text-align: center;
+        margin-top: -50px;
+        -moz-appearance: textfield;
+
+        @media (max-width: 385px) {
+          width: 100%;
+        }
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+  }
+}

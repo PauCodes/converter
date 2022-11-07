@@ -1,0 +1,61 @@
+.control {
+  background-color: #1c3879;
+  height: 100vh;
+  padding-bottom: 30px;
+  overflow: auto;
+  .homeWrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header {
+    h1 {
+      color: lightskyblue;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 3rem;
+      letter-spacing: 0.2rem;
+      padding: 30px;
+
+      @media (max-width: 385px) {
+        font-size: 2rem;
+      }
+    }
+  }
+  .options {
+    // background-color: #dff6ff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+
+    .roundBtn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      gap: 30px;
+      flex-basis: calc((100% / 2) - 60px);
+      margin: 30px;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background-color: lightskyblue;
+      color: #1c3879;
+      &:hover,
+      &:focus {
+        color: coral;
+      }
+
+      .mainIcon {
+        font-size: 5rem;
+      }
+    }
+  }
+}
