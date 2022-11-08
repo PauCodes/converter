@@ -5,9 +5,9 @@ const CurrencyContext = createContext();
 
 export const CurrencyProvider = ({children}) => {
 
-    const url = "https://v6.exchangerate-api.com/v6/a9ae822acc76e889555a326d/latest/USD";
+    const url = "https://v6.exchangerate-api.com/v6/d91d7e456d7f3d409428b3b7/latest/USD";
 
-    const pairCodeUrl = `https://v6.exchangerate-api.com/v6/a9ae822acc76e889555a326d/pair/`;
+    const pairCodeUrl = `https://v6.exchangerate-api.com/v6/d91d7e456d7f3d409428b3b7/pair/`;
 
 
     const [ currency, setCurrency ] = useState([]);
@@ -25,7 +25,7 @@ export const CurrencyProvider = ({children}) => {
             method: "GET",
             url: url
         }).then((apiData) => {
-            setCurrency(apiData.data.conversion_rates)
+            setCurrency(apiData.data.conversion_rates);
         })
     },[]);
 
