@@ -44,10 +44,10 @@ const TemperatureConverter = () => {
     return (
         <section className="temperatureSection">
         <div className="wrapper">
-            <header>            
+            <header className="tempHeader">            
                 <h2>Temperature</h2>
             </header>
-            <div className="card">
+            <div className="card tempCard">
                 <form  onSubmit={submitHandler}>
                     <div className="tempContainer">
                         <label htmlFor="from" className="unitName">{from}</label> 
