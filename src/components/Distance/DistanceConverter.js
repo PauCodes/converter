@@ -16,10 +16,10 @@ const DistanceConverter = () => {
     const mile = 1.609;
     // const km = 0.621;
 
-       if(from === 'miles') {
-            setResult((userInput * mile).toFixed());
+       if(from === 'Miles') {
+            setResult((userInput * mile).toFixed(3));
        }else {
-            setResult((userInput / mile).toFixed())
+            setResult((userInput / mile).toFixed(3))
        };
    };
 
